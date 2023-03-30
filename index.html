@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is your age?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>What is your age?</h1>
+
+    </header>
+    <section>
+        <div>
+            <p>Year of birth:
+                <input type="number" name="txtano" id="txtano">
+            </p>
+            <p>Gender:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Male</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Female</label>
+                <input type="radio" name="radsex" id="other">
+                <label for="other">Other</label>
+            </p>
+            <p>
+                <input type="button" value="Verify" onclick="verificar()">
+            </p>
+
+        </div>
+
+        <div id="res">
+            Fill in the details above to see the result.
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Lucas Speck - Web Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
